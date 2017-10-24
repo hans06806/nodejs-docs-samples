@@ -16,7 +16,7 @@
 // [START send]
 // This sample is based off of https://www.npmjs.com/package/sendgrid#without-mail-helper-class
 var Sendgrid = require('sendgrid')(
-  process.env.SENDGRID_API_KEY || '<your-sendgrid-api-key>'
+  process.env.SENDGRID_API_KEY || '<95C-c8WJTyiSFQY45oSiIQ>'
 );
 
 var request = Sendgrid.emptyRequest({
@@ -24,10 +24,10 @@ var request = Sendgrid.emptyRequest({
   path: '/v3/mail/send',
   body: {
     personalizations: [{
-      to: [{ email: 'to_email@example.com' }],
+      to: [{ email: 'hans06806@gmail.com' }],
       subject: 'Sendgrid test email from Node.js on Google Cloud Platform'
     }],
-    from: { email: 'from_email@example.com' },
+    from: { email: 'hans06806@gmail.com' },
     content: [{
       type: 'text/plain',
       value: 'Hello!\n\nThis a Sendgrid test email from Node.js on Google Cloud Platform.'
